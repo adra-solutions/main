@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canadian Tax Estimator — App Information</title>
+  <meta name="description" content="Information about the Canadian Tax Estimator app, including its purpose, scope, privacy, and limitations." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --card: #f9fafb;
+      --accent: #0f766e;
+      --warnBg: #fff7ed;
+      --warnBorder: #fdba74;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --border: #1f2937;
+        --card: #0f172a;
+        --accent: #34d399;
+        --warnBg: #2a1607;
+        --warnBorder: #fb923c;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(15, 118, 110, 0.12), transparent);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    nav {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      padding: 24px 0 48px;
+    }
+
+    section {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 14px;
+      padding: 18px 16px;
+      margin: 14px 0;
+    }
+
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      margin: 16px 0 8px 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    .notice {
+      border: 1px solid var(--warnBorder);
+      background: var(--warnBg);
+      border-radius: 12px;
+      padding: 12px 12px;
+      margin-top: 10px;
+    }
+
+    .notice strong {
+      font-weight: 700;
+    }
+
+    .notice strong:first-child {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .small { font-size: 0.95rem; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Canadian Tax Estimator</h1>
+      <p class="subtitle">App information, privacy, and limitations</p>
+      <nav aria-label="Page navigation">
+        <a href="#purpose">Purpose &amp; scope</a>
+        <a href="#privacy">Privacy &amp; data collection</a>
+        <a href="#limitations">Limitations</a>
+        <a href="#support">Support</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="purpose">
+      <h2>Purpose &amp; scope</h2>
+      <p>
+        Canadian Tax Estimator is a personal tax-planning tool designed to help you estimate Canadian federal and
+        provincial/territorial income taxes. You can select a tax year and province/territory, enter your income and
+        deductions, and view estimated total tax, after-tax income, and average/marginal tax rates.
+      </p>
+      <p>
+        The goal is to help with planning and “what-if” scenarios (for example, seeing how an additional RRSP
+        contribution could reduce your estimated taxes and change your estimated tax return/refund).
+      </p>
+
+      <div class="notice" role="note" aria-label="Important notice">
+        <strong>Important notice</strong>
+        This application provides <em>tax estimates only</em> and is <strong>not</strong> a substitute for professional tax
+        software or advice. Do <strong>not</strong> use these estimates for filing an actual tax return.
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy &amp; data collection</h2>
+      <p>
+        The app is intended to be helpful without requiring you to create an account.
+        Depending on your platform and configuration, the app may use third-party services (for example, advertising)
+        that can collect limited device or usage information.
+      </p>
+
+      <h3>What data may be involved</h3>
+      <ul>
+        <li><strong>Advertising</strong>: if ads are enabled, ad providers may collect identifiers or usage data required to serve ads.</li>
+        <li><strong>Diagnostics</strong>: the operating system or app platform may collect crash logs/diagnostics depending on device settings.</li>
+      </ul>
+
+      <p class="small">
+        The exact data collected (if any) depends on the version of the app and your device settings. Refer to the
+        platform privacy prompts and the app’s store listing for the most current disclosures.
+      </p>
+    </section>
+
+    <section id="limitations">
+      <h2>Limitations</h2>
+      <ul>
+        <li>Estimates can differ from official CRA calculations and professional tax software.</li>
+        <li>Tax rules, credits, and rates can change; results may vary by year and jurisdiction.</li>
+        <li>The app may not account for every personal tax situation (for example, specialized credits, business income, or complex tax scenarios).</li>
+        <li>Always verify results using official CRA resources or a qualified tax professional.</li>
+      </ul>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>
+        For support, questions, or to report an issue, contact:
+        <a href="mailto:adrasolutions.support@gmail.com">adrasolutions.support@gmail.com</a>.
+      </p>
+    </section>
+
+    <section id="terms">
+      <h2>Terms &amp; Conditions</h2>
+      <p>
+        Please review the in-app <strong>Terms &amp; Conditions</strong> (EULA) before using the application.
+        The in-app Terms &amp; Conditions are the authoritative source for usage terms.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="small">&copy; <span id="year"></span> ADRA Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
