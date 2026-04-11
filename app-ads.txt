@@ -1,3 +1,3 @@
 # app-ads.txt for Canadian Tax Estimator
-# Last updated: 2026-04-08
+# Last updated: 2026-04-11
 google.com, pub-6687322026217869, DIRECT, f08c47fec0942fa0
